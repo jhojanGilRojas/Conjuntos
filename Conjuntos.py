@@ -200,7 +200,17 @@ def on_select(event):
             mostrar_mensaje("El complemento entre los dos conjuntos es:"+str(complemento(conjunto1,conjunto2)))
         if (selected_value == "combinacion entre ellos"):
             mostrar_mensaje("La combinación entre los dos conjuntos es:"+str(combinacion(conjunto1,conjunto2)))
-
+    else:
+        if (selected_value == "Union"):
+            mostrar_mensaje("La union entre los dos conjuntos es:"+str(union_tres(conjunto1,conjunto2,conjunto3)))
+        if (selected_value == "Intersection"):
+            mostrar_mensaje("La interseccion entre los dos conjuntos es:"+str(interseccion_tres(conjunto1,conjunto2,conjunto3)))
+        if (selected_value == "Diferencia"):
+            mostrar_mensaje("La diferencia entre los dos conjuntos es:"+str(diferencia_tres(conjunto1,conjunto2,conjunto3)))
+        if (selected_value == "complemento"):
+            mostrar_mensaje("El complemento entre los dos conjuntos es:"+str(complemento(conjunto1,conjunto2)))
+        if (selected_value == "combinacion entre ellos"):
+            mostrar_mensaje("La combinación entre los dos conjuntos es:"+str(combinacion(conjunto1,conjunto2)))
 def mostrar_alerta(mensaje):
     messagebox.showwarning("Alerta", mensaje)
 
